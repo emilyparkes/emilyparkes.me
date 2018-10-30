@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/emilyparkes/emilycoco#readme",
   "scripts": {
-    "start": "node server/index"
+    "start": "node server/index && sass --watch scss/index.scss:public/css/style.css"
   },
   "babel": {
     "presets": [
@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
-    "dotenv": "^6.1.0",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "node-sass": "^4.9.4"
   }
 }
