@@ -1,8 +1,16 @@
-const server = require('./server')
+const express = require('express')
+const bodyParser = require('body-parser')
 
-const PORT = process.env.PORT || 3000
+const server = express()
 
-server.listen(PORT, function () {
-  // eslint-disable-next-line no-console
-  console.log('Listening on port', PORT)
+const port = 3000
+
+server.use(function (err, req, res, next) {
+  console.error(err.stack)
+  res.send(500, 'Something broke!')
 })
+
+server.use(bodyParser.json())
+server.use(express.static('public'))
+
+server.listen(port, function () { console.log("Server is listening on ", port) })
