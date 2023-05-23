@@ -4,12 +4,12 @@ function Me () {
   return (
     <>
     <nav>
-      <div>
-        Emily Parkes
-      </div>
+      <Link to='/'>
+        <div>Emily Parkes</div>
+      </Link>
       <div>
       <ul>
-        {/* <Link to='/contact'>Projects</Link> */}
+        {/* <Link to='/projects'>Projects</Link> */}
         <Link to='/contact'>Contact</Link>
       </ul>
       </div>
@@ -19,7 +19,7 @@ function Me () {
       <div className='left-container'>
       <h1>
         <span>Kia ora, I&apos;m Emily. </span>  I&apos;m a <span className="title"> Front End Developer </span>
-        {' based in Pōneke, Aotearoa. '}
+        {' based in Pōneke (Wellington), NZ. '}
         <span className=""> I am passionate about what tech can do for people and an avid lover</span>
          {' of '}
         <span className="container-flip">
