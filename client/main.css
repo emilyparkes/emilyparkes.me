@@ -24,7 +24,7 @@ svg:not(:root) {
 body {
   margin: 0;
   overflow-x: hidden;
-  background-color: #F9F7F3;
+  background-color: #F1F7ED;
 }
 
 * {
@@ -60,12 +60,12 @@ nav {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #082d0a;
 }
 
 h1 {
   font-family: "Spectral SC", sans-serif;
-  color: #181616;
+  color: #082d0a;
   letter-spacing: 0.05rem;
   font-weight: 500;
   max-width: 860px;
@@ -125,7 +125,7 @@ h1 span.title {
 
 .title-name {
   font-family: "Mada", sans-serif;
-  color: #100404;
+  color: #082d0a;
   letter-spacing: 0.05rem;
   font-weight: 500;
   display: block;
@@ -145,7 +145,7 @@ h1 span.title {
   flex-wrap: nowrap;
   align-content: center;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .left-container {
@@ -831,7 +831,7 @@ input[type=text], input[type=email], select, textarea {
 }
 
 button[type=submit] {
-  background-color: #04AA6D;
+  background-color: #7CA982;
   color: white;
   padding: 12px 20px;
   border: none;
