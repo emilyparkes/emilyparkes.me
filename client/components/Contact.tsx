@@ -19,9 +19,9 @@ function Contact () {
   <div className="container mx-auto">
     <div className="max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
       <div className="text-center">
-        <h1 className="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
+        <h2 className="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
           Contact
-        </h1>
+        </h2>
         <p className="text-gray-400 dark:text-gray-400">
           Send me a message to say hey and chat or ask for my resume. 
         </p>

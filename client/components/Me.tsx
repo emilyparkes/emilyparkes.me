@@ -16,8 +16,8 @@ function Me () {
     </nav>
 
     <div className="container">
-      <div className='left-container'>
-      <h1>
+      <div className='summary-container'>
+      <h2>
         <span>Kia ora, I&apos;m Emily. </span>  I&apos;m a <span className="title"> Front End Developer </span>
         {' based in Pōneke (Wellington), NZ. '}
         <span className=""> I am passionate about what tech can do for people and an avid lover</span>
@@ -32,10 +32,10 @@ function Me () {
             <span className="flip flip-dog"> petting dogs</span>
             <span className="flip flip-hobbies"> collecting hobbies</span>
         </span> 
-      </h1>
+      </h2>
       </div>
 
-      <div className='right-container'>
+      <div className='name-container'>
         <h1 className='title-name'>
           EMILY PARKES
         </h1>
