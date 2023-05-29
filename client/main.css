@@ -92,14 +92,14 @@ h2 span.title {
   display: block;
   padding-top: 54px;
   margin: 0;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   line-height: 1;
 }
 
 @media (min-width: 320px) {
-  h2 {
+  /* h2 {
     font-size: 1.3rem;
-  }
+  } */
 }
 
 @media (min-width: 394px) {
@@ -145,11 +145,11 @@ h2 span.title {
 }
 
 .container {
-  display: flex;
   max-width: 80%;
-  width: 100%;
   margin: 0 auto;
+  /* width: 100%; */
   padding-top: 4%;
+  display: flex;
   flex-direction: column-reverse;
   flex-wrap: nowrap;
   align-content: center;
@@ -178,18 +178,29 @@ h2 span.title {
 }
 
 @media (min-width: 520px) {
-  .container {
+  /* .container {
+        display: flex;
     flex-direction: column-reverse;
-  }
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+  } */
   .container-flip {
     height: 43px;
   }
 }
 
 @media (min-width: 675px) {
-  .container {
+  /* .container {
+    display: flex;
     flex-direction: column-reverse;
-  }
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+
+  } */
   .container-flip {
     width: 80%;
     top: 16px;
@@ -198,14 +209,6 @@ h2 span.title {
 }
 
 @media (min-width: 859px) {
-  .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    align-content: center;
-    justify-content: space-between;
-  }
   .summary-container {
     width: 45%;
   }
@@ -221,7 +224,15 @@ h2 span.title {
 }
 
 @media (min-width: 936px) {
-
+  .container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: space-between;
+  }
   /* .container-flip {
     height: 60px;
   } */
