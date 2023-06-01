@@ -14,14 +14,10 @@
   },
   "homepage": "https://github.com/emilyparkes/emilyparkes.me#readme",
   "scripts": {
-    "start": "node dist/server/index.ts",
+    "start": "ts-node",
     "test": "vitest",
-    "dev": "run-p dev:client dev:server",
-    "dev:client": "vite",
-    "dev:server": "nodemon server/index.ts",
-    "build": "run-s build:client build:server",
-    "build:client": "vite build",
-    "build:server": "tsc -p server/tsconfig.json",
+    "dev": "vite",
+    "build": "vite build",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "format": "prettier -w '**/*.{js,jsx,ts,tsx}'"
   },
@@ -36,8 +32,6 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4",
     "@testing-library/user-event": "^14.4.3",
-    "@types/express": "^4.17.17",
-    "@types/express-serve-static-core": "^4.17.33",
     "@types/react": "^18.0.23",
     "@types/react-dom": "^18.0.7",
     "@types/react-router": "^5.1.19",
@@ -54,23 +48,17 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "nodemon": "^2.0.15",
-    "npm-run-all": "^4.1.5",
     "prettier": "2.6.1",
     "react": "^18.0.2",
     "react-router-dom": "^6.11.1",
     "superagent": "7.1.1",
     "supertest": "^6.2.2",
-    "ts-node": "^10.9.1",
     "typescript": "~4.8.4",
     "vite": "^4.2.1",
     "vitest": "^0.30.1"
   },
   "dependencies": {
-    "express": "^4.17.2",
-    "knex": "^2.3.0",
-    "react-dom": "^18.2.0",
-    "sqlite3": "^5.1.2"
+    "ts-node": "^10.9.1"
   },
   "prettier": {
     "semi": false,
